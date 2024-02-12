@@ -10,21 +10,28 @@ body {
   line-height: 1.1;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  color: #d5d4d8;
+  font-size: 1.2rem;
+}
+
 h1,
 p,
 button {
   margin-bottom: 20px;
 }
 
-p {
-  color: #d5d4d8;
-}
-
 .password p {
   color: #10b981;
+  font-size: 1rem;
 }
 
 button {
+  font-size: 1rem;
   margin-top: 20px;
   color: white;
   background-color: #10b981;
