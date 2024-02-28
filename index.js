@@ -110,3 +110,23 @@ function generateRandomPassword() {
     passwordEl2.textContent = randomPassword2;
   }
 }
+
+passwordEl1.addEventListener("click", copyToClipboard);
+passwordEl2.addEventListener("click", copyToClipboard);
+
+function copyToClipboard(event) {
+  const passwordText = event.target.textContent;
+  navigator.clipboard
+    .writeText(passwordText)
+    .then(() => {
+      console.log("Password copied to clipboard: ", passwordText);
+
+      event.target.classList.add("copied");
+      setTimeout(() => {
+        event.target.classList.remove("copied");
+      }, 200);
+    })
+    .catch((error) => {
+      console.error("Failed to copy password: ", error);
+    });
+}

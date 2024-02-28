@@ -73,4 +73,10 @@ button:hover {
   padding: 20px 10px;
   border-radius: 5px;
   background-color: #273549;
+  cursor: pointer;
+}
+
+.password p.copied {
+  background-color: #41ba92;
+  color: white;
 }
